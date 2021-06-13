@@ -1,6 +1,7 @@
 {
-  "name": "~TODO~",
+  "name": "arlenpeiffer.io-v3",
   "version": "0.0.1",
+  "description": "A personal site for the person Arlen Peiffer who does web development things",
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
