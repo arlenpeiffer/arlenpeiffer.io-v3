@@ -9,6 +9,9 @@
     "lint": "prettier --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
     "format": "prettier --write --plugin-search-dir=. ."
   },
+  "dependencies": {
+    "ress": "^4.0.0"
+  },
   "devDependencies": {
     "@sveltejs/kit": "next",
     "eslint": "^7.22.0",
