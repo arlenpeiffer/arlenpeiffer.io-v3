@@ -1,0 +1,17 @@
+// Breakpoint
+$mobile: 425px;
+$tablet: 600px;
+$breakpoints: (
+  mobile: $mobile,
+  tablet: $tablet
+);
+
+// Color
+$blue: #06f;
+$green: #6e0;
+$orange: #f90;
+$white: #fff;
+
+// Font
+$font-family: 'IBM Plex Mono', monospace;
+$font-size: 14px;
