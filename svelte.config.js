@@ -7,7 +7,11 @@ const config = {
     target: '#svelte'
   },
 
-  preprocess: preprocess()
+  preprocess: preprocess({
+    scss: {
+      prependData: `@import 'src/styles/main.scss';`
+    }
+  })
 }
 
 export default config

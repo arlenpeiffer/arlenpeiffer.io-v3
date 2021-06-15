@@ -1,0 +1,13 @@
+@mixin breakpoint($breakpoint, $type: min) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+    @if $type == max {
+      $value: $value - 1px;
+    }
+    @media only screen and (#{$type}-width: $value) {
+      @content;
+    }
+  } @else {
+    @error "no idea what ↔️ breakpoint you're talking about";
+  }
+}
