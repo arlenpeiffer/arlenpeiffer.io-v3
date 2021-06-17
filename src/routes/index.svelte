@@ -32,6 +32,7 @@
     padding: 2.5rem 3rem 2rem;
 
     img {
+      width: 100%;
       max-width: 18rem;
     }
 
