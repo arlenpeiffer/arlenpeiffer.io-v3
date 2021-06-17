@@ -14,10 +14,8 @@
     src={jockjams}
     alt="Smiley kid holding an unopened copy of Jock Jams Volume 1 on compact disc"
   />
-  <div>
-    <h1>Hi. I'm Arlen.</h1>
-    <h2>I help out with the internet.</h2>
-  </div>
+  <h1>Hi. I'm Arlen.</h1>
+  <h2>I help out with the internet.</h2>
   <ul>
     {#each links as link}
       <li>
@@ -31,30 +29,18 @@
 
 <style lang="scss">
   main {
-    display: grid;
-    grid-template-columns: repeat(12, minmax(0, 1fr));
-    row-gap: 2rem;
-    margin: auto;
-    max-width: 40rem;
-    padding: 2rem;
-    text-align: center;
+    padding: 2.5rem 3rem 2rem;
 
     img {
-      grid-column: 2 / span 10;
-      @include breakpoint(mobile) {
-        grid-column: 3 / span 8;
-      }
-      @include breakpoint(tablet) {
-        grid-column: 4 / span 6;
-      }
+      max-width: 18rem;
     }
 
-    div,
+    h1 {
+      margin-top: 1.5rem;
+    }
+
     ul {
-      grid-column: 1 / -1;
-      @include breakpoint(mobile) {
-        grid-column: 3 / span 8;
-      }
+      margin-top: 2rem;
     }
 
     li {

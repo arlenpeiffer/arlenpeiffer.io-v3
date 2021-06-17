@@ -1,5 +1,5 @@
 :global(body) {
-  background: linear-gradient($orange, $green);
+  background: $white;
   color: $blue;
   font-family: $font-family;
   font-size: $font-size;
@@ -7,13 +7,13 @@
   letter-spacing: 0.08em;
   ::selection {
     background: transparent;
-    color: $white;
+    color: $green;
   }
 }
 
 :global(#svelte) {
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: flex-end;
   min-height: 100vh;
 }
 
