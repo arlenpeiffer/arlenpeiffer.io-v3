@@ -13,13 +13,15 @@
   <img
     src={jockjams}
     alt="Smiley kid holding an unopened copy of Jock Jams Volume 1 on compact disc"
+    width={288}
+    height={384}
   />
   <h1>Hi. I'm Arlen.</h1>
   <h2>I help out with the internet.</h2>
   <ul>
     {#each links as link}
       <li>
-        <a href={link.href} target="_blank">
+        <a href={link.href} target="_blank" rel="noopener">
           {link.text}
         </a>
       </li>
@@ -37,6 +39,7 @@
     img {
       width: 100%;
       max-width: 18rem;
+      height: auto;
     }
 
     h1 {
