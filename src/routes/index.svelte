@@ -30,8 +30,12 @@
 <style lang="scss">
   main {
     padding: 2.5rem 3rem 2rem;
+    @include breakpoint(mobile, max) {
+      margin: 0 auto;
+    }
 
     img {
+      width: 100%;
       max-width: 18rem;
     }
 
